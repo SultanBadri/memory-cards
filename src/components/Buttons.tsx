@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import { CardContainer } from "../data/cardsData";
 
 const Div = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const Button = styled.button`
@@ -22,9 +27,21 @@ const Button = styled.button`
 `;
 
 export const Buttons = () => {
+  const [showGame, setShowGame] = useState(false);
+
+  const handleClick = () => {
+    setShowGame(true);
+  };
+
   return (
     <Div>
-      <Button>Let's play!</Button>
+      <Button
+        style={{ display: showGame ? "none" : "block" }}
+        onClick={handleClick}
+      >
+        Let's play!
+      </Button>
+      {showGame ? <CardContainer /> : null}
     </Div>
   );
 };
