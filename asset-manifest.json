@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.js": "/memory-cards/static/js/main.57cd0082.chunk.js",
-    "main.js.map": "/memory-cards/static/js/main.57cd0082.chunk.js.map",
+    "main.js": "/memory-cards/static/js/main.d31196a6.chunk.js",
+    "main.js.map": "/memory-cards/static/js/main.d31196a6.chunk.js.map",
     "runtime-main.js": "/memory-cards/static/js/runtime-main.f0e6f162.js",
     "runtime-main.js.map": "/memory-cards/static/js/runtime-main.f0e6f162.js.map",
-    "static/js/2.b395537e.chunk.js": "/memory-cards/static/js/2.b395537e.chunk.js",
-    "static/js/2.b395537e.chunk.js.map": "/memory-cards/static/js/2.b395537e.chunk.js.map",
+    "static/js/2.286155da.chunk.js": "/memory-cards/static/js/2.286155da.chunk.js",
+    "static/js/2.286155da.chunk.js.map": "/memory-cards/static/js/2.286155da.chunk.js.map",
     "index.html": "/memory-cards/index.html",
-    "static/js/2.b395537e.chunk.js.LICENSE.txt": "/memory-cards/static/js/2.b395537e.chunk.js.LICENSE.txt",
+    "static/js/2.286155da.chunk.js.LICENSE.txt": "/memory-cards/static/js/2.286155da.chunk.js.LICENSE.txt",
+    "static/media/backburner.7bccde98.jpg": "/memory-cards/static/media/backburner.7bccde98.jpg",
+    "static/media/direct_hit.49160e2a.jpg": "/memory-cards/static/media/direct_hit.49160e2a.jpg",
+    "static/media/force_of_nature.14e090ae.jpg": "/memory-cards/static/media/force_of_nature.14e090ae.jpg",
     "static/media/tf2build.78d4f8cd.ttf": "/memory-cards/static/media/tf2build.78d4f8cd.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.f0e6f162.js",
-    "static/js/2.b395537e.chunk.js",
-    "static/js/main.57cd0082.chunk.js"
+    "static/js/2.286155da.chunk.js",
+    "static/js/main.d31196a6.chunk.js"
   ]
 }
