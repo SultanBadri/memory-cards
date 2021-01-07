@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { CardContainer } from "../data/cardsData";
+import { ScoreBoard } from "./ScoreBoard";
 
 const Div = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @media (max-width: 1024px) {
-    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
 `;
@@ -28,20 +32,24 @@ const Button = styled.button`
 
 export const Buttons = () => {
   const [showGame, setShowGame] = useState(false);
+  const [score, setScore] = useState(0);
 
   const handleClick = () => {
     setShowGame(true);
   };
 
   return (
-    <Div>
-      <Button
-        style={{ display: showGame ? "none" : "block" }}
-        onClick={handleClick}
-      >
-        Let's play!
-      </Button>
-      {showGame ? <CardContainer /> : null}
-    </Div>
+    <>
+      {showGame ? <ScoreBoard score={score} /> : null}
+      <Div>
+        <Button
+          style={{ display: showGame ? "none" : "block" }}
+          onClick={handleClick}
+        >
+          Let's play!
+        </Button>
+        {showGame ? <CardContainer setScore={setScore} /> : null}
+      </Div>
+    </>
   );
 };
