@@ -1,8 +1,8 @@
 import React from "react";
+import { GlobalStyle } from "./GlobalStyle";
 import { Header } from "./components/Header";
 import { Buttons } from "./components/Buttons";
-import { GlobalStyle } from "./GlobalStyle";
-import { ScoreBoard } from "./components/ScoreBoard";
+import { Rules } from "./components/Rules";
 import styled from "styled-components";
 
 const Div = styled.div`
@@ -18,6 +18,7 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Header />
       <Buttons />
+      <Rules />
     </>
   );
 };

@@ -24,6 +24,7 @@ const Button = styled.button`
   border-radius: 25px;
   background: #aaaaaa;
   transition: 0.3s ease;
+  font-family: "tf2 build";
   &:hover {
     background: #cf6a32;
     color: white;
