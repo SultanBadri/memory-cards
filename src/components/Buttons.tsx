@@ -31,12 +31,18 @@ const Button = styled.button`
   }
 `;
 
-export const Buttons = () => {
+interface SetShowRules {
+  score: number;
+  setScore: any;
+  setShowRules: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const Buttons = ({ score, setScore, setShowRules }: SetShowRules) => {
   const [showGame, setShowGame] = useState(false);
-  const [score, setScore] = useState(0);
 
   const handleClick = () => {
     setShowGame(true);
+    setShowRules(false);
   };
 
   return (

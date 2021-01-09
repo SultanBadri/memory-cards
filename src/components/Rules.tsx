@@ -22,16 +22,26 @@ const Header = styled.h2`
   color: #cf6a32;
 `;
 
-export const Rules = () => {
-  return (
-    <Container>
-      <RulesDiv>
-        <Header>Rules</Header>
-        <p>
-          You cannot click on the same card twice or you lose. You highest score
-          will be saved on the browser in case you ever come back!
-        </p>
-      </RulesDiv>
-    </Container>
-  );
+interface ShowRules {
+  showRules: boolean;
+}
+
+export const Rules = ({ showRules }: ShowRules) => {
+  const rules = () => {
+    if (showRules === true) {
+      return (
+        <Container>
+          <RulesDiv>
+            <Header>Rules</Header>
+            <p>
+              You cannot click on the same card twice or you lose. You highest
+              score will be saved on the browser in case you ever come back!
+            </p>
+          </RulesDiv>
+        </Container>
+      );
+    }
+  };
+
+  return <>{rules()}</>;
 };

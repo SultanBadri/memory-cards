@@ -24,10 +24,11 @@ const H3 = styled.p`
 interface MyProps {
   name: string;
   src: string;
-  setScore: Function;
+  isClicked: boolean;
+  setScore: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export const Card = ({ name, src, setScore }: MyProps) => {
+export const Card = ({ name, src, isClicked, setScore }: MyProps) => {
   const handleClick = () => {
     setScore((prev: any) => prev + 1);
   };

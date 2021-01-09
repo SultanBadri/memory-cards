@@ -1,24 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { GlobalStyle } from "./GlobalStyle";
 import { Header } from "./components/Header";
 import { Buttons } from "./components/Buttons";
 import { Rules } from "./components/Rules";
-import styled from "styled-components";
-
-const Div = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-`;
 
 const App: React.FC = () => {
+  const [showRules, setShowRules] = useState(true);
+  const [score, setScore] = useState(0);
+
   return (
     <>
       <GlobalStyle />
       <Header />
-      <Buttons />
-      <Rules />
+      <Buttons score={score} setScore={setScore} setShowRules={setShowRules} />
+      <Rules showRules={showRules} />
     </>
   );
 };
