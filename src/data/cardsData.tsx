@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState, useEffect } from "react";
 import { Card } from "../components/Card";
 import forceOfNature from "../images/force_of_nature.jpg";
 import directHit from "../images/direct_hit.jpg";
@@ -8,48 +8,61 @@ import ironBomber from "../images/iron_bomber.png";
 interface CardInterface {
   name: string;
   src: string;
-  isClicked: boolean;
 }
 
-interface SetScore {
+interface ScoreProps {
+  score: number;
   setScore: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export const CardContainer = ({ setScore }: SetScore) => {
+export const CardContainer: React.FC<ScoreProps> = ({ score, setScore }) => {
+  const [isClicked, setIsClicked] = useState([] as any);
   const [numOfCards] = useState(3);
 
   const cards: Array<CardInterface> = [
     {
       name: "Force of Nature",
       src: forceOfNature,
-      isClicked: false,
     },
     {
       name: "Direct Hit",
       src: directHit,
-      isClicked: false,
     },
     {
       name: "Backburner",
       src: backburner,
-      isClicked: false,
     },
     {
       name: "Iron Bomber",
       src: ironBomber,
-      isClicked: false,
     },
   ];
-  
+
+  const [memoryCards, setNewMemoryCards] = useState(cards);
+
+  const shuffleCards = (cards: CardInterface[]) => {
+    for (let i = cards.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+  };
+
+  useEffect(() => {
+    const newCards = [...memoryCards];
+    shuffleCards(newCards);
+    setNewMemoryCards(newCards);
+  }, [score]);
+
   return (
     <>
-      {cards.slice(0, numOfCards).map((card) => (
+      {memoryCards.slice(0, numOfCards).map((card) => (
         <Card
           name={card.name}
           src={card.src}
-          isClicked={card.isClicked}
           key={card.name}
           setScore={setScore}
+          isClicked={isClicked}
+          setIsClicked={setIsClicked}
         />
       ))}
     </>

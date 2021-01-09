@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const ScoreParagraph = styled.p`
@@ -17,11 +17,11 @@ const ScoreSpan = styled.span`
   color: white;
 `;
 
-interface ScoreParameter {
+interface ScoresProp {
   score: number;
 }
 
-export const ScoreBoard = ({ score }: ScoreParameter) => {
+export const ScoreBoard: React.FC<ScoresProp> = ({ score }) => {
   return (
     <>
       <ScoreParagraph>

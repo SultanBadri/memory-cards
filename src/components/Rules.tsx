@@ -22,11 +22,11 @@ const Header = styled.h2`
   color: #cf6a32;
 `;
 
-interface ShowRules {
+interface RulesProp {
   showRules: boolean;
 }
 
-export const Rules = ({ showRules }: ShowRules) => {
+export const Rules: React.FC<RulesProp> = ({ showRules }) => {
   const rules = () => {
     if (showRules === true) {
       return (

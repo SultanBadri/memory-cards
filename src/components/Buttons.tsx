@@ -31,13 +31,17 @@ const Button = styled.button`
   }
 `;
 
-interface SetShowRules {
+interface RulesAndScoreProp {
   score: number;
   setScore: any;
   setShowRules: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const Buttons = ({ score, setScore, setShowRules }: SetShowRules) => {
+export const Buttons: React.FC<RulesAndScoreProp> = ({
+  score,
+  setScore,
+  setShowRules,
+}) => {
   const [showGame, setShowGame] = useState(false);
 
   const handleClick = () => {
@@ -55,7 +59,7 @@ export const Buttons = ({ score, setScore, setShowRules }: SetShowRules) => {
         >
           Let's play!
         </Button>
-        {showGame ? <CardContainer setScore={setScore} /> : null}
+        {showGame ? <CardContainer score={score} setScore={setScore} /> : null}
       </Div>
     </>
   );

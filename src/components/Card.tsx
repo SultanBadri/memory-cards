@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Modal } from "./Modal";
 
 const CardDiv = styled.div`
   margin: 50px;
@@ -21,21 +22,35 @@ const H3 = styled.p`
   color: white;
 `;
 
-interface MyProps {
+interface CardProps {
   name: string;
   src: string;
-  isClicked: boolean;
   setScore: React.Dispatch<React.SetStateAction<number>>;
+  isClicked: any;
+  setIsClicked: React.Dispatch<any>;
 }
 
-export const Card = ({ name, src, isClicked, setScore }: MyProps) => {
-  const handleClick = () => {
-    setScore((prev: any) => prev + 1);
+export const Card: React.FC<CardProps> = ({
+  name,
+  src,
+  setScore,
+  isClicked,
+  setIsClicked,
+}) => {
+  const handleGameLogic = () => {
+    if (!isClicked.includes(name)) {
+      setScore((prev: any) => prev + 1);
+      setIsClicked((prev: any) => [...prev, name]);
+    } else {
+      Modal();
+      setScore(0);
+      setIsClicked([]);
+    }
   };
 
   return (
     <>
-      <CardDiv onClick={handleClick}>
+      <CardDiv onClick={handleGameLogic}>
         <H3>{name}</H3>
         <img src={src} alt={name} width="200px" height="125px" />
       </CardDiv>
