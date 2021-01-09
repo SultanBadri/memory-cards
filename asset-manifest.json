@@ -1,23 +1,46 @@
 {
   "files": {
-    "main.js": "/memory-cards/static/js/main.48cf8dae.chunk.js",
-    "main.js.map": "/memory-cards/static/js/main.48cf8dae.chunk.js.map",
+    "main.js": "/memory-cards/static/js/main.95f80c34.chunk.js",
+    "main.js.map": "/memory-cards/static/js/main.95f80c34.chunk.js.map",
     "runtime-main.js": "/memory-cards/static/js/runtime-main.f0e6f162.js",
     "runtime-main.js.map": "/memory-cards/static/js/runtime-main.f0e6f162.js.map",
     "static/js/2.f835f407.chunk.js": "/memory-cards/static/js/2.f835f407.chunk.js",
     "static/js/2.f835f407.chunk.js.map": "/memory-cards/static/js/2.f835f407.chunk.js.map",
     "index.html": "/memory-cards/index.html",
     "static/js/2.f835f407.chunk.js.LICENSE.txt": "/memory-cards/static/js/2.f835f407.chunk.js.LICENSE.txt",
+    "static/media/ambassador.d9099234.png": "/memory-cards/static/media/ambassador.d9099234.png",
     "static/media/backburner.ae684c19.jpg": "/memory-cards/static/media/backburner.ae684c19.jpg",
+    "static/media/capper.baa76584.png": "/memory-cards/static/media/capper.baa76584.png",
+    "static/media/crusader's_crossbow.4ea14fbd.png": "/memory-cards/static/media/crusader's_crossbow.4ea14fbd.png",
+    "static/media/dead_ringer.1e855e90.png": "/memory-cards/static/media/dead_ringer.1e855e90.png",
     "static/media/direct_hit.b6d584cd.jpg": "/memory-cards/static/media/direct_hit.b6d584cd.jpg",
+    "static/media/escape_plan.0ea06c9b.png": "/memory-cards/static/media/escape_plan.0ea06c9b.png",
+    "static/media/eyelander.e3362392.jpg": "/memory-cards/static/media/eyelander.e3362392.jpg",
+    "static/media/flare_gun.c2813e9f.png": "/memory-cards/static/media/flare_gun.c2813e9f.png",
     "static/media/force_of_nature.fa0d73e3.jpg": "/memory-cards/static/media/force_of_nature.fa0d73e3.jpg",
+    "static/media/gloves_of_running_urgently.7210ab19.png": "/memory-cards/static/media/gloves_of_running_urgently.7210ab19.png",
+    "static/media/gunboats.64d3d016.png": "/memory-cards/static/media/gunboats.64d3d016.png",
+    "static/media/huntsman.b79adc71.png": "/memory-cards/static/media/huntsman.b79adc71.png",
     "static/media/iron_bomber.d673df3c.png": "/memory-cards/static/media/iron_bomber.d673df3c.png",
+    "static/media/jag.ebb7c8d1.png": "/memory-cards/static/media/jag.ebb7c8d1.png",
+    "static/media/kritzkrieg.2411dd1b.png": "/memory-cards/static/media/kritzkrieg.2411dd1b.png",
+    "static/media/kunai.299c5ed8.png": "/memory-cards/static/media/kunai.299c5ed8.png",
+    "static/media/powerjack.0764a7f4.jpg": "/memory-cards/static/media/powerjack.0764a7f4.jpg",
+    "static/media/razerback.03de386c.png": "/memory-cards/static/media/razerback.03de386c.png",
+    "static/media/rescue_ranger.1aea8c0d.png": "/memory-cards/static/media/rescue_ranger.1aea8c0d.png",
+    "static/media/sandman.2690a3ee.png": "/memory-cards/static/media/sandman.2690a3ee.png",
+    "static/media/sandvich.9097d8bb.png": "/memory-cards/static/media/sandvich.9097d8bb.png",
+    "static/media/shashasha.d820b5de.png": "/memory-cards/static/media/shashasha.d820b5de.png",
+    "static/media/short_circuit.218d5eeb.png": "/memory-cards/static/media/short_circuit.218d5eeb.png",
+    "static/media/sticky_jumper.d6dd06f5.png": "/memory-cards/static/media/sticky_jumper.d6dd06f5.png",
     "static/media/tf2_more_gun.4d627023.mp3": "/memory-cards/static/media/tf2_more_gun.4d627023.mp3",
-    "static/media/tf2build.78d4f8cd.ttf": "/memory-cards/static/media/tf2build.78d4f8cd.ttf"
+    "static/media/tf2build.78d4f8cd.ttf": "/memory-cards/static/media/tf2build.78d4f8cd.ttf",
+    "static/media/tomislav.13c987c9.png": "/memory-cards/static/media/tomislav.13c987c9.png",
+    "static/media/ubersaw.27fd79f9.png": "/memory-cards/static/media/ubersaw.27fd79f9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f0e6f162.js",
     "static/js/2.f835f407.chunk.js",
-    "static/js/main.48cf8dae.chunk.js"
+    "static/js/main.95f80c34.chunk.js"
   ]
 }
