@@ -12,7 +12,7 @@ const CardDiv = styled.div`
   &:hover {
     border 2px solid #cf6a32;
   }
-  @media (max-width: 420px) {
+  @media (max-width: 768px) {
     margin: 10px;
     padding: 10px;
   }
@@ -24,6 +24,29 @@ const H3 = styled.p`
   text-align: center;
   font-size: 1.2rem;
   color: white;
+  @media (max-width: 420px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 0.8rem;
+  }
+`;
+
+const Img = styled.img`
+  width: 200px;
+  height: 125px;
+  @media (max-width: 420px) {
+    width: 150px;
+    height: 100px;
+  }
+  @media (max-width: 420px) {
+    width: 125px;
+    height: 75px;
+  }
+  @media (max-width: 360px) {
+    width: 75px;
+    height: 50px;
+  }
 `;
 
 interface CardProps {
@@ -67,15 +90,16 @@ export const Card: React.FC<CardProps> = ({
     <>
       <CardDiv onClick={handleGameLogic}>
         <H3>{name}</H3>
-        <img src={src} alt={name} width="200px" height="125px" />
+        <Img src={src} alt={name} />
       </CardDiv>
 
       {isModalOpen ? (
         <Modal
+          score={score}
           setScore={setScore}
           setIsClicked={setIsClicked}
           setIsModalOpen={setIsModalOpen}
-        ></Modal>
+        />
       ) : null}
     </>
   );

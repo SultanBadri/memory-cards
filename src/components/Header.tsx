@@ -7,21 +7,32 @@ import { ImPause } from "react-icons/im";
 const Div = styled.div`
   text-align: center;
   background: #cf6a32;
-  padding: 0.5rem;
+  padding: 0.2rem;
 `;
 
 const H1 = styled.h1`
   color: white;
   font-family: "tf2 build";
   @media (max-width: 420px) {
-    font-size: 28px;
+    font-size: 1.5rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 1rem;
   }
 `;
 
-const MusicSpan = styled.span`
+const MusicDiv = styled.div`
   cursor: pointer;
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  margin: 1rem;
+  font-family: "tf2 build";
+  @media (max-width: 420px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Header = () => {
@@ -37,9 +48,14 @@ export const Header = () => {
   return (
     <Div>
       <H1>Tf2 Memory Cards</H1>
-      <MusicSpan title="Play me!" onClick={toggleMusic}>
-        {playing ? <ImPause /> : <ImPlay2 />}
-      </MusicSpan>
+      <MusicDiv onClick={toggleMusic}>
+        Play me:{" "}
+        {playing ? (
+          <ImPause style={{ verticalAlign: "bottom" }} />
+        ) : (
+          <ImPlay2 style={{ verticalAlign: "bottom" }} />
+        )}
+      </MusicDiv>
     </Div>
   );
 };

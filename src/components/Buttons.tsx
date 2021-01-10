@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { CgGames } from "react-icons/cg";
 import { CardContainer } from "../data/cardsData";
 import { ScoreBoard } from "./ScoreBoard";
 
@@ -14,6 +15,15 @@ const Div = styled.div`
     justify-content: center;
     flex-direction: column;
   }
+  @media (max-width: 768px) {
+    margin-top: 6rem;
+  }
+  @media (max-width: 420px) {
+    margin-top: 3rem;
+  }
+  @media (max-width: 360px) {
+    margin-top: 4rem;
+  }
 `;
 
 const Button = styled.button`
@@ -22,9 +32,11 @@ const Button = styled.button`
   border: none;
   outline: none;
   border-radius: 25px;
-  background: #aaaaaa;
+  background: #3e4242;
+  color: white;
   transition: 0.3s ease;
   font-family: "tf2 build";
+  font-size: 1.2rem;
   &:hover {
     background: #cf6a32;
     color: white;
@@ -61,7 +73,8 @@ export const Buttons: React.FC<RulesAndScoreProp> = ({
           style={{ display: showGame ? "none" : "block" }}
           onClick={handleClick}
         >
-          Let's play!
+          Let's play!{" "}
+          <CgGames style={{ verticalAlign: "middle", fontSize: "1.8rem" }} />
         </Button>
         {showGame ? (
           <CardContainer
