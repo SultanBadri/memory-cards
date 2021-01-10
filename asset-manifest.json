@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/memory-cards/static/js/main.6a4ef439.chunk.js",
-    "main.js.map": "/memory-cards/static/js/main.6a4ef439.chunk.js.map",
+    "main.js": "/memory-cards/static/js/main.d32d1516.chunk.js",
+    "main.js.map": "/memory-cards/static/js/main.d32d1516.chunk.js.map",
     "runtime-main.js": "/memory-cards/static/js/runtime-main.f0e6f162.js",
     "runtime-main.js.map": "/memory-cards/static/js/runtime-main.f0e6f162.js.map",
     "static/js/2.208bdd58.chunk.js": "/memory-cards/static/js/2.208bdd58.chunk.js",
@@ -18,7 +18,8 @@
     "static/media/eyelander.e3362392.jpg": "/memory-cards/static/media/eyelander.e3362392.jpg",
     "static/media/flare_gun.c2813e9f.png": "/memory-cards/static/media/flare_gun.c2813e9f.png",
     "static/media/force_of_nature.fa0d73e3.jpg": "/memory-cards/static/media/force_of_nature.fa0d73e3.jpg",
-    "static/media/gloves_of_running_urgently.7210ab19.png": "/memory-cards/static/media/gloves_of_running_urgently.7210ab19.png",
+    "static/media/frying_pan.e06f4b83.png": "/memory-cards/static/media/frying_pan.e06f4b83.png",
+    "static/media/golden_frying_pan.45dd5ac6.jpg": "/memory-cards/static/media/golden_frying_pan.45dd5ac6.jpg",
     "static/media/gunboats.64d3d016.png": "/memory-cards/static/media/gunboats.64d3d016.png",
     "static/media/huntsman.b79adc71.png": "/memory-cards/static/media/huntsman.b79adc71.png",
     "static/media/iron_bomber.d673df3c.png": "/memory-cards/static/media/iron_bomber.d673df3c.png",
@@ -30,17 +31,20 @@
     "static/media/rescue_ranger.1aea8c0d.png": "/memory-cards/static/media/rescue_ranger.1aea8c0d.png",
     "static/media/sandman.2690a3ee.png": "/memory-cards/static/media/sandman.2690a3ee.png",
     "static/media/sandvich.9097d8bb.png": "/memory-cards/static/media/sandvich.9097d8bb.png",
+    "static/media/sentry.f70915c9.png": "/memory-cards/static/media/sentry.f70915c9.png",
     "static/media/shashasha.d820b5de.png": "/memory-cards/static/media/shashasha.d820b5de.png",
     "static/media/short_circuit.218d5eeb.png": "/memory-cards/static/media/short_circuit.218d5eeb.png",
     "static/media/sticky_jumper.d6dd06f5.png": "/memory-cards/static/media/sticky_jumper.d6dd06f5.png",
     "static/media/tf2_more_gun.4d627023.mp3": "/memory-cards/static/media/tf2_more_gun.4d627023.mp3",
     "static/media/tf2build.78d4f8cd.ttf": "/memory-cards/static/media/tf2build.78d4f8cd.ttf",
     "static/media/tomislav.13c987c9.png": "/memory-cards/static/media/tomislav.13c987c9.png",
-    "static/media/ubersaw.27fd79f9.png": "/memory-cards/static/media/ubersaw.27fd79f9.png"
+    "static/media/ubersaw.27fd79f9.png": "/memory-cards/static/media/ubersaw.27fd79f9.png",
+    "static/media/warrior's_spirit.8cdd79a0.png": "/memory-cards/static/media/warrior's_spirit.8cdd79a0.png",
+    "static/media/wild_scout.c58e2737.png": "/memory-cards/static/media/wild_scout.c58e2737.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f0e6f162.js",
     "static/js/2.208bdd58.chunk.js",
-    "static/js/main.6a4ef439.chunk.js"
+    "static/js/main.d32d1516.chunk.js"
   ]
 }
