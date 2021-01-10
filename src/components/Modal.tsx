@@ -28,6 +28,7 @@ const Paragraph = styled.p`
   padding: 1rem;
   font-size: 1.2rem;
   white-space: nowrap;
+  color: #cccccc;
 `;
 
 const Button = styled.div`

@@ -14,7 +14,7 @@ import stickyJumper from "../images/sticky_jumper.png";
 import eyelander from "../images/eyelander.jpg";
 import tomislav from "../images/tomislav.png";
 import sandvich from "../images/sandvich.png";
-import glovesOfRunningUrgently from "../images/gloves_of_running_urgently.png";
+import warriorsSpirit from "../images/warrior's_spirit.png";
 import rescueRanger from "../images/rescue_ranger.png";
 import shortCurcuit from "../images/short_circuit.png";
 import jag from "../images/jag.png";
@@ -27,6 +27,10 @@ import shashasha from "../images/shashasha.png";
 import ambassador from "../images/ambassador.png";
 import kunai from "../images/kunai.png";
 import deadRinger from "../images/dead_ringer.png";
+import fryingPan from "../images/frying_pan.png";
+import goldenFryingPan from "../images/golden_frying_pan.jpg";
+import sentry from "../images/sentry.png";
+import wildScout from "../images/wild_scout.png";
 
 interface CardInterface {
   name: string;
@@ -103,8 +107,8 @@ export const CardContainer: React.FC<ScoreProps> = ({
       src: eyelander,
     },
     {
-      name: "Gloves of Running Urgently",
-      src: glovesOfRunningUrgently,
+      name: "Warrior's Spirit",
+      src: warriorsSpirit,
     },
     {
       name: "Jag",
@@ -157,6 +161,22 @@ export const CardContainer: React.FC<ScoreProps> = ({
     {
       name: "Gunboats",
       src: gunboats,
+    },
+    {
+      name: "Frying Pan",
+      src: fryingPan,
+    },
+    {
+      name: "Golden Frying Pan",
+      src: goldenFryingPan,
+    },
+    {
+      name: "Sentry",
+      src: sentry,
+    },
+    {
+      name: "A wild Scout",
+      src: wildScout,
     },
   ];
 

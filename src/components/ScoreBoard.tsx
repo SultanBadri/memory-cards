@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const ScoreParagraph = styled.p`
+const ScoreDiv = styled.div`
+  margin: 1rem 0;
   text-align: center;
   font-size: 1.6rem;
   font-family: "tf2 build";
   color: #cf6a32;
   @media (max-width: 420px) {
     font-size: 1rem;
+    margin: 0.5rem 0;
   }
 `;
 
@@ -23,12 +25,12 @@ interface ScoresProp {
 export const ScoreBoard: React.FC<ScoresProp> = ({ score, bestScore }) => {
   return (
     <>
-      <ScoreParagraph>
+      <ScoreDiv>
         Score: <ScoreSpan>{score}</ScoreSpan>
-      </ScoreParagraph>
-      <ScoreParagraph>
+      </ScoreDiv>
+      <ScoreDiv>
         High Score: <ScoreSpan>{bestScore}</ScoreSpan>
-      </ScoreParagraph>
+      </ScoreDiv>
     </>
   );
 };

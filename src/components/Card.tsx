@@ -8,7 +8,7 @@ const CardDiv = styled.div`
   cursor: pointer;
   transition: 0.3s ease;
   border 2px solid transparent;
-  border-radius: 4px;
+  border-radius: 8px;
   &:hover {
     border 2px solid #cf6a32;
   }

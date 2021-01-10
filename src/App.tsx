@@ -12,7 +12,7 @@ const App: React.FC = () => {
   );
 
   return (
-    <>
+    <div style={{ overflow: "hidden" }}>
       <GlobalStyle />
       <Header />
       <Buttons
@@ -23,7 +23,7 @@ const App: React.FC = () => {
         setShowRules={setShowRules}
       />
       <Rules showRules={showRules} />
-    </>
+    </div>
   );
 };
 
