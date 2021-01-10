@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/memory-cards/static/js/main.95f80c34.chunk.js",
-    "main.js.map": "/memory-cards/static/js/main.95f80c34.chunk.js.map",
+    "main.js": "/memory-cards/static/js/main.312a2fd1.chunk.js",
+    "main.js.map": "/memory-cards/static/js/main.312a2fd1.chunk.js.map",
     "runtime-main.js": "/memory-cards/static/js/runtime-main.f0e6f162.js",
     "runtime-main.js.map": "/memory-cards/static/js/runtime-main.f0e6f162.js.map",
-    "static/js/2.f835f407.chunk.js": "/memory-cards/static/js/2.f835f407.chunk.js",
-    "static/js/2.f835f407.chunk.js.map": "/memory-cards/static/js/2.f835f407.chunk.js.map",
+    "static/js/2.96b3084f.chunk.js": "/memory-cards/static/js/2.96b3084f.chunk.js",
+    "static/js/2.96b3084f.chunk.js.map": "/memory-cards/static/js/2.96b3084f.chunk.js.map",
     "index.html": "/memory-cards/index.html",
-    "static/js/2.f835f407.chunk.js.LICENSE.txt": "/memory-cards/static/js/2.f835f407.chunk.js.LICENSE.txt",
+    "static/js/2.96b3084f.chunk.js.LICENSE.txt": "/memory-cards/static/js/2.96b3084f.chunk.js.LICENSE.txt",
     "static/media/ambassador.d9099234.png": "/memory-cards/static/media/ambassador.d9099234.png",
     "static/media/backburner.ae684c19.jpg": "/memory-cards/static/media/backburner.ae684c19.jpg",
     "static/media/capper.baa76584.png": "/memory-cards/static/media/capper.baa76584.png",
@@ -40,7 +40,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f0e6f162.js",
-    "static/js/2.f835f407.chunk.js",
-    "static/js/main.95f80c34.chunk.js"
+    "static/js/2.96b3084f.chunk.js",
+    "static/js/main.312a2fd1.chunk.js"
   ]
 }
