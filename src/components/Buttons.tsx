@@ -33,13 +33,17 @@ const Button = styled.button`
 
 interface RulesAndScoreProp {
   score: number;
-  setScore: any;
+  setScore: React.Dispatch<React.SetStateAction<number>>;
+  bestScore: React.ReactText;
+  setBestScore: React.Dispatch<React.SetStateAction<React.ReactText>>;
   setShowRules: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const Buttons: React.FC<RulesAndScoreProp> = ({
   score,
   setScore,
+  bestScore,
+  setBestScore,
   setShowRules,
 }) => {
   const [showGame, setShowGame] = useState(false);
@@ -51,7 +55,7 @@ export const Buttons: React.FC<RulesAndScoreProp> = ({
 
   return (
     <>
-      {showGame ? <ScoreBoard score={score} /> : null}
+      {showGame ? <ScoreBoard score={score} bestScore={bestScore} /> : null}
       <Div>
         <Button
           style={{ display: showGame ? "none" : "block" }}
@@ -59,7 +63,14 @@ export const Buttons: React.FC<RulesAndScoreProp> = ({
         >
           Let's play!
         </Button>
-        {showGame ? <CardContainer score={score} setScore={setScore} /> : null}
+        {showGame ? (
+          <CardContainer
+            score={score}
+            setScore={setScore}
+            bestScore={bestScore}
+            setBestScore={setBestScore}
+          />
+        ) : null}
       </Div>
     </>
   );

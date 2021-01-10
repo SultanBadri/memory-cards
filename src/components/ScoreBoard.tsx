@@ -19,13 +19,19 @@ const ScoreSpan = styled.span`
 
 interface ScoresProp {
   score: number;
+  bestScore: React.ReactText;
 }
 
-export const ScoreBoard: React.FC<ScoresProp> = ({ score }) => {
+export const ScoreBoard: React.FC<ScoresProp> = ({ score, bestScore }) => {
   return (
     <>
       <ScoreParagraph>
         Score: <ScoreSpan>{score}</ScoreSpan>
+      </ScoreParagraph>
+      <br />
+      <br />
+      <ScoreParagraph>
+        High Score: <ScoreSpan>{bestScore}</ScoreSpan>
       </ScoreParagraph>
     </>
   );

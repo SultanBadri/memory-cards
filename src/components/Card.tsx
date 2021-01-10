@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Modal } from "./Modal";
 
 const CardDiv = styled.div`
-  margin: 50px;
+  margin: 30px;
   padding: 20px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -11,6 +11,10 @@ const CardDiv = styled.div`
   border-radius: 4px;
   &:hover {
     border 2px solid #cf6a32;
+  }
+  @media (max-width: 420px) {
+    margin: 10px;
+    padding: 10px;
   }
 `;
 
@@ -25,7 +29,10 @@ const H3 = styled.p`
 interface CardProps {
   name: string;
   src: string;
+  score: number;
   setScore: React.Dispatch<React.SetStateAction<number>>;
+  bestScore: number | string;
+  setBestScore: React.Dispatch<React.SetStateAction<React.ReactText>>;
   isClicked: any;
   setIsClicked: React.Dispatch<any>;
 }
@@ -33,18 +40,26 @@ interface CardProps {
 export const Card: React.FC<CardProps> = ({
   name,
   src,
+  score,
   setScore,
+  bestScore,
+  setBestScore,
   isClicked,
   setIsClicked,
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleGameLogic = () => {
     if (!isClicked.includes(name)) {
-      setScore((prev: any) => prev + 1);
+      let newScore = score + 1;
+      setScore(newScore);
+      if (newScore > bestScore) {
+        setBestScore(newScore);
+        localStorage.setItem("bestScore", newScore.toString());
+      }
       setIsClicked((prev: any) => [...prev, name]);
     } else {
-      Modal();
-      setScore(0);
-      setIsClicked([]);
+      setIsModalOpen(true);
     }
   };
 
@@ -54,6 +69,14 @@ export const Card: React.FC<CardProps> = ({
         <H3>{name}</H3>
         <img src={src} alt={name} width="200px" height="125px" />
       </CardDiv>
+
+      {isModalOpen ? (
+        <Modal
+          setScore={setScore}
+          setIsClicked={setIsClicked}
+          setIsModalOpen={setIsModalOpen}
+        ></Modal>
+      ) : null}
     </>
   );
 };

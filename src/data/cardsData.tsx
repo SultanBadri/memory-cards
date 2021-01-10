@@ -36,9 +36,16 @@ interface CardInterface {
 interface ScoreProps {
   score: number;
   setScore: React.Dispatch<React.SetStateAction<number>>;
+  bestScore: React.ReactText;
+  setBestScore: React.Dispatch<React.SetStateAction<React.ReactText>>;
 }
 
-export const CardContainer: React.FC<ScoreProps> = ({ score, setScore }) => {
+export const CardContainer: React.FC<ScoreProps> = ({
+  score,
+  setScore,
+  bestScore,
+  setBestScore,
+}) => {
   const [isClicked, setIsClicked] = useState([] as any);
   const [numOfCards] = useState(3);
 
@@ -175,7 +182,10 @@ export const CardContainer: React.FC<ScoreProps> = ({ score, setScore }) => {
           name={card.name}
           src={card.src}
           key={card.name}
+          score={score}
           setScore={setScore}
+          bestScore={bestScore}
+          setBestScore={setBestScore}
           isClicked={isClicked}
           setIsClicked={setIsClicked}
         />
