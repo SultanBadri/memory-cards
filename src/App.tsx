@@ -4,8 +4,6 @@ import { Header } from "./components/Header";
 import { Buttons } from "./components/Buttons";
 import { Rules } from "./components/Rules";
 
-import backgroundImage from "./images/gold_rush.jpg";
-
 const App: React.FC = () => {
   const [showRules, setShowRules] = useState(true);
   const [score, setScore] = useState(0);
@@ -14,14 +12,7 @@ const App: React.FC = () => {
   );
 
   return (
-    <div
-      style={{
-        overflow: "hidden",
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        height: "100vh",
-      }}
-    >
+    <div style={{ overflow: "hidden" }}>
       <GlobalStyle />
       <Header />
       <Buttons
